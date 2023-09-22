@@ -5,13 +5,19 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="icon" href="{{ url('./images/favicon.ico') }}">
     <title>{{ config('app.name', 'Laravel') }}</title>
-    @livewireStyles
+    <style>
+        [x-cloak] {
+            display: none !important;
+        }
+    </style>
+
+    @filamentStyles
+    @vite('resources/css/app.css')
 </head>
-<body>
-    <!-- Page Content -->
-    <main>
-        {{ $slot }}
-    </main>
-    @livewireScripts
+<body class="antialiased">
+{{ $slot }}
+
+@filamentScripts
+@vite('resources/js/app.js')
 </body>
 </html>
