@@ -15,7 +15,9 @@
     @vite('resources/css/app.css')
 </head>
 <body class="antialiased">
-{{ $slot }}
+<main class="block max-w-2xl mx-auto">
+    {{ $slot }}
+</main>
 
 @filamentScripts
 @vite('resources/js/app.js')
