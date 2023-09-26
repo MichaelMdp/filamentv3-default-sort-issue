@@ -18,7 +18,7 @@
 <main class="block max-w-2xl mx-auto">
     {{ $slot }}
 </main>
-
+@wireUiScripts
 @filamentScripts
 @vite('resources/js/app.js')
 </body>
