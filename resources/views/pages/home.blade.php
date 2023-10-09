@@ -1,4 +1,4 @@
 <x-layouts.app>
-    <div>hello</div>
-    @livewire('demo-form')
+{{--    @livewire('demo-form')--}}
+    @livewire('dropdown-test')
 </x-layouts.app>
